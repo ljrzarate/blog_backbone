@@ -1,0 +1,16 @@
+%h1 Blog Backbone
+
+= form_for @new_post do |f|
+  = f.label :title
+  = f.text_field :title
+  %br
+  = f.label :description
+  = f.text_area :description, rows: 4
+  %br
+  = f.label :post_date
+  = f.date_select :post_date
+  %br
+  = f.submit
+
+%table
+  %tbody
